@@ -17,17 +17,17 @@
     // makeUl.style.border = "1px solid black"; 
 
 
-    // const ulStyleObject = ["width", "height", "border"];
-    // const ulStyleValue = ["100px", "100px", "1px solid black"];
     
     // makeUl.style[ulStyleObject[0]] ="100px"; 
     // makeUl.style[ulStyleObject[1]] = "100px";
     // makeUl.style[ulStyleObject[2]] = "1px solid black"; 
-
+    
     // for(let i =0; i<ulStyleObject.length; i++) {
-    //   makeUl.style[ulStyleObject[i]] = ulStyleValue[i];
-    // }
-
+      //   makeUl.style[ulStyleObject[i]] = ulStyleValue[i];
+      // }
+      const ulStyleObject = ["width", "height", "border"];
+      const ulStyleValue = ["100px", "100px", "1px solid black"];
+      
     let domStyle= {
       firstArray: ["width", "height", "border"],
       secondArray: ["100px", "100px", "1px solid black"],
@@ -42,7 +42,7 @@
     }
     // twoArrayDomStyling(ulStyleObject,ulStyleValue,makeUl);
 
-    function oneObjeckDomStyling(object) {
+    function oneObjectDomStyling(object) {
       for(let i =0; i<object.firstArray.length; i++) {
         object.element.style[firstArray[i]] = object.secondArray[i];
       } 

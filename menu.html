@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <div id="root"></div>
+  <script>
+    const menu =[
+      // "불고기",
+      // "피자",
+      // "치킨",
+      // "찐만두",
+      // "닭강정",
+      // "김치볶음밥",
+      // "떡볶이",
+      // "삼겹살",
+      // "목살",
+      "육회비빔밥",
+      "파스타",
+      "닭갈비",
+      "햄버거",
+    ]
+    const burger = ["버거킹", "롯데리아", "맘스터치","맥도날드"]
+  function getRandomInt(min, max) {
+    min = Math.ceil(min);
+    max = Math.floor(max);
+    return Math.floor(Math.random() * (max - min)) + min; //최댓값은 제외, 최솟값은 포함
+  }
+  const root = document.getElementById('root');
+    root.textContent=(menu[getRandomInt(0, menu.length)]);
+    if(root.textContent==="햄버거"){
+      root.textContent= (burger[getRandomInt(0, burger.length)]);
+    }
+  
+
+  root.style.fontSize = "150px";
+  console.dir(Math);
+  </script>
+</body>
+</html>
